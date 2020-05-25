@@ -45,3 +45,7 @@
 Теперь можно открыть страницу domain.ua/report.html и увидеть real-time статистику сервера.
 
 Для автоматического запуска GoAccess демона после перезагрузки сервера следует включить его в systemd командой `systemctl enable goaccess`.
+### Полезные ссылки
++ https://goaccess.io - официальный сайт GoAccess
++ https://access.redhat.com/documentation - документация RHEL по созданию сервисов в systemd
++ https://medium.com - как запускать веб-приложения в виде сервисов в systemd
