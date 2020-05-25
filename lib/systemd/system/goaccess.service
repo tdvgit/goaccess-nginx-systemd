@@ -1,0 +1,17 @@
+[Unit]
+Description=Goaccess Web log report
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+#Restart=always
+#ExecStart=/usr/bin/goaccess -a -g -f /var/log/nginx/access.log -o /www/domain/report.html --real-time-html --ws-url=ws://<IP>:7890
+#ExecStart=/usr/bin/goaccess -g -f /var/log/nginx/access.log -o /www/domain/report.html --log-format VCOMBINED --real-time-html
+ExecStart=/usr/bin/goaccess -p /etc/goaccess/goaccess.conf
+#StandardOutput=null
+#StandardError=null
+
+[Install]
+WantedBy=multi-user.target
